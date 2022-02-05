@@ -1,12 +1,12 @@
-import { useLocaleStorage } from "../../hooks/useLocaleStorage";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import contactsActions from "../../redux/contacts/contacts-actions";
 import { v4 as uuidv4 } from "uuid";
 import { FormStyled, Label, Input, AddButton } from "./Form.styled";
 
 export default function Form() {
-  const [name, setName] = useLocaleStorage("name", "");
-  const [number, setNumber] = useLocaleStorage("number", "");
+  const [name, setName] = useState("name", "");
+  const [number, setNumber] = useState("number", "");
   const dispatch = useDispatch();
 
   const handleChange = (evt) => {
