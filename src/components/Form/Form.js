@@ -5,8 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 import { FormStyled, Label, Input, AddButton } from "./Form.styled";
 
 export default function Form() {
-  const [name, setName] = useState("name", "");
-  const [number, setNumber] = useState("number", "");
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
   const dispatch = useDispatch();
 
   const handleChange = (evt) => {

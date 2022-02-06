@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Container>
         <Title>Phonebook</Title>
-        {/* <Form /> */}
+        <Form />
         <ContactsTitle>Contacts</ContactsTitle>
         {/* <Filter /> */}
         {/* <ContactList /> */}
