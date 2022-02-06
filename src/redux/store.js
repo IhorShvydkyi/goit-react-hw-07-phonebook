@@ -11,7 +11,7 @@ import { configureStore } from "@reduxjs/toolkit";
 //   REGISTER,
 // } from "redux-persist";
 // import storage from "redux-persist/lib/storage";
-// import contactsReducer from './contacts/contacts-reducer'
+import contactsReducer from "./contacts/contacts-reducer";
 import { contactApi } from "./contacts/contact-slice";
 
 // const contactsPersistConfig = {
@@ -22,6 +22,7 @@ import { contactApi } from "./contacts/contact-slice";
 
 export const store = configureStore({
   reducer: {
+    contacts: contactsReducer,
     [contactApi.reducerPath]: contactApi.reducer,
   },
   middleware: (getDefaultMiddleware) => [
