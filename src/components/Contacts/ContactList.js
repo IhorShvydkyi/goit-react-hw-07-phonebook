@@ -5,8 +5,6 @@ import {
   useDeleteContactMutation,
 } from "../../redux/contacts/contact-slice";
 import Spinner from "../Spinner/Spinner";
-// import contactsActions from "../../redux/contacts/contacts-actions";
-// import { getVisibleContact } from "../../redux/contacts/contacts-selectors";
 import {
   ContactListStyled,
   ContactItem,
@@ -24,7 +22,6 @@ const ContactsList = () => {
 
   const contactFilterList = contacts ? getFilteredContacts(contacts) : null;
   const [deleteContact] = useDeleteContactMutation();
-  // const onDelete = (id) => dispatch(contactsActions.deleteContact(id))
 
   return (
     <>

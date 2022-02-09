@@ -6,8 +6,6 @@ import {
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import toastNotification from "../Notifications/notification";
-// import contactsActions from '../../redux/contacts/contacts-actions'
-// import { v4 as uuidv4 } from 'uuid'
 import { FormStyled, Label, Input, AddButton } from "./Form.styled";
 
 export default function Form() {
